@@ -17,8 +17,7 @@ const SearchBar = () => {
       />
       <button
         onClick={() => {
-          if (location === "hadi") return;
-          router.push("/search");
+          router.push(`/search?query=${location}`);
         }}
         className="rounded bg-red-600 px-9 py-2 text-white"
       >
